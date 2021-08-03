@@ -1,16 +1,16 @@
-import ITypesFactory from "./ITypesFactory";
-import NiceEntity from "./NiceEntity";
-import BadEntity from "./BadEntity";
+import IShapesFactory from "./IShapesFactory";
+import GreenEntity from "./GreenEntity";
+import RedEntity from "./RedEntity";
 
-function client (factory: ITypesFactory, name: string): void {
-    const a = factory.create_a(name);
-    const b = factory.create_b();
+function client (factory: IShapesFactory, name: string): void {
+    const a = factory.createA(name);
+    const b = factory.createB();
 
-    a.say_hi();
-    b.say_by();
+    a.sayHi();
+    b.sayBy();
 }
 
 console.log("======NiceEntity======");
-client(new NiceEntity(), "Nice A");
+client(new GreenEntity(), "Bob");
 console.log("======BadEntity======");
-client(new BadEntity(), "Bad A");
+client(new RedEntity(), "Rob");
