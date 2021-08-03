@@ -3,11 +3,11 @@ import GreenEntity from "./GreenEntity";
 import RedEntity from "./RedEntity";
 
 function client (factory: IShapesFactory, name: string): void {
-    const a = factory.createA(name);
-    const b = factory.createB();
+    const circle = factory.createCircle(name);
+    const triangle = factory.createTriangle();
 
-    a.sayHi();
-    b.sayBy();
+    circle.sayHi();
+    triangle.sayBy();
 }
 
 console.log("======NiceEntity======");

@@ -5,7 +5,7 @@ import ITriangle from "./triangle/ITriangle";
 import RedTriangle from "./triangle/RedTriangle";
 
 export default class RedEntity implements ITypesFactory{
-    createA = (name: string): ICircle => new RedCircle(name);
-    createB = (): ITriangle => new RedTriangle();
+    createCircle = (name: string): ICircle => new RedCircle(name);
+    createTriangle = (): ITriangle => new RedTriangle();
     
 }
