@@ -2,9 +2,9 @@
 
 **I have an interest in TS, and I decided to write patterns to investigate it.**
 
-If you see errors or you can tell me about the best practices, ways to improve and optimize, please contact me >(^_^)<
+If you see some errors, feel free make an issue or report me about it and you're always welcome to optimize and impove these examples >(^_^)<
 
-I use this to run examples:
+You can use this command to run the examples:
 
 ```javascript
 npx ts-node **/index.ts
